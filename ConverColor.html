@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>颜色转换器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="asset/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="asset/toastr.min.css" />
+    <script src="asset/jquery-1.11.1.min.js"></script>
+    <script src="asset/jquery.mobile-1.4.5.min.js"></script>
+    <script src="asset/toastr.min.js"></script>
+    <script src="asset/logic.js"></script>
+
+
+
+    <style type="text/css">
+
+        div{
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        #toast-container > .customer-info {
+            color: black;
+            background-color: #f7f7f7;
+        }
+
+
+    </style>
+</head>
+<body style="width: 400px; height: 450px">
+
+<div>
+    <h1>合并颜色透明度(白色背景)</h1>
+</div>
+<div>
+    请输入颜色值：
+    <input type="text" name="text-1" id="colorVal" value="#333333">
+
+</div>
+
+<div>
+    请输入透明度:
+    <input id="opacity" value="0.5">
+
+</div>
+
+<div >
+    <button id="calculator" style="margin-top:20px; width: 80%">计算</button>
+</div>
+
+<div >
+    <p id="output"></p>
+</div>
+
+<div>
+
+<div id="show" style="width: 100px; height: 100px; background: #333333;margin: 0px"></div>
+</div>
+
+
+
+<div data-role="popup" id="popupBasic">
+    <p>已复制到粘贴板</p>
+</div>
+
+</body>
+</html>
